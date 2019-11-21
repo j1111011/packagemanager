@@ -33,12 +33,13 @@ ApplicationWindow {
         selectMultiple: false
         onAccepted: {
             datas.savedir = exportDlg.fileUrl
+            bridge.export_package(listView.currentItem.text,datas.savedir)
         }
     }
 
     function save() {
         exportDlg.open()
-        bridge.export_package(listView.currentItem.text,datas.savedir)
+
     }
 
     ColumnLayout {

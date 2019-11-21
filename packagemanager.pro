@@ -43,3 +43,6 @@ HEADERS += \
     deviceconnector.h \
     adbdevice.h \
     units.h
+
+DISTFILES += \
+    README.md

@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     QGuiApplication app(argc, argv);
     QQmlApplicationEngine engine;
-    //const auto type = qmlRegisterType<Bridge>("com.apm.bridge",1,0,"Bridge");
+//    const auto type = qmlRegisterType<Bridge>("com.apm.bridge",1,0,"Bridge");
     Bridge bridge;
     Worker worker;
     bridge.setWorker(&worker);

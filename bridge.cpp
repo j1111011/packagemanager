@@ -130,6 +130,7 @@ void Bridge::on_units_processed(qint64 id)
         default:
             break;
         }
+        Units::release(unit);
     }
 
 }

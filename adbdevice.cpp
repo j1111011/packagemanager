@@ -35,8 +35,8 @@ void AdbDevice::remove(const char *pkg)
 
 void AdbDevice::exp(const char *savedir, const char *pkg)
 {
+    // adb pull pkg_loc savedir
     qDebug() << savedir << pkg;
-
 }
 QString random_string(int len)
 {
